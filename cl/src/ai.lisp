@@ -1,10 +1,9 @@
 
 (in-package codecheck-ai)
 
-(defparameter *recursion-limit* 10000)
+(defparameter *recursion-limit* 100000)
 
 (defvar *strings*)
-(defvar *depth*)
 
 (defun word (i)
   (aref *strings* i))
