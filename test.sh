@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ROOT=$(cd $(dirname $0) && pwd)
+PATH=$PATH:$ROOT/node_modules/mocha/bin
 
 # Standardize the script files / the program files into Unix style.
 find . -type f -name "*.sh" | xargs chmod +x

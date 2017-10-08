@@ -8,7 +8,7 @@ mvn package -Dmaven.test.skip=true
 cd $ROOT/java/ai
 mvn package -Dmaven.test.skip=true
 
-### Python ###
-# cd $ROOT/python/src
-# python -m compileall .
-
+### CL ###
+#cd $ROOT/cl
+#sbcl --eval '(load "src/base.lisp")' --eval '(load "src/fw.lisp")' --eval '(codecheck-fw:build-main)'
+#sbcl --eval '(load "src/base.lisp")' --eval '(load "src/ai.lisp")' --eval '(codecheck-ai:build-main)'
